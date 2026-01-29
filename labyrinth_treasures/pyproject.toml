@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "labyrinth-treasures"
+version = "0.1.0"
+description = "Console game: Labyrinth of Treasures"
+authors = ["Student <student@example.com>"]
+readme = "README.md"
+packages = [{ include = "labyrinth_treasures" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[tool.poetry.scripts]
+labyrinth = "labyrinth_treasures.main:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+fix = true
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
