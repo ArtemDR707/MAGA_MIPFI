@@ -49,5 +49,3 @@ make project
 ## Демонстрация (asciinema)
 
 Вставь ссылку на запись полного цикла (создание таблицы + все CRUD + confirm_action + удаление таблицы):
-
-https://asciinema.org/a/<YOUR_CAST_ID>
